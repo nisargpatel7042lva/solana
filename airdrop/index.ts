@@ -6,5 +6,3 @@ export const airdrop = async (addresss : string, amount : number) => {
     const signature = await conn.requestAirdrop(publicKey, amount * LAMPORTS_PER_SOL);
     await conn.confirmTransaction(signature);
 }
-
-airdrop("3fTVWVBgm8yYh8XXd7qTBCBuLNP4nMKsCAgesHHCBnA5", 1);
